@@ -65,7 +65,7 @@ export default function LocationMap({ latitude, longitude, locationName }: Locat
         <Map
           defaultCenter={{ lat: latitude, lng: longitude }}
           defaultZoom={12}
-          mapId="GEOLENS_MAP"
+          mapId="TERRALOGIC_MAP"
           className="h-full w-full"
         >
           <AdvancedMarker position={{ lat: latitude, lng: longitude }} title={locationName}>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Layers, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from './components/Logo.tsx';
 import UploadZone from './components/UploadZone.tsx';
 import AnalysisPanel from './components/AnalysisPanel.tsx';
 import LocationMap from './components/Map.tsx';
@@ -61,9 +62,7 @@ export default function App() {
       <nav className="h-16 border-b border-white/5 px-8 flex items-center justify-between relative z-50 bg-[#050505]/40 backdrop-blur-md">
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3 cursor-pointer group" onClick={() => setResult(null)}>
-            <div className="w-9 h-9 bg-white text-black flex items-center justify-center rounded-sm transition-transform group-hover:rotate-90">
-              <Layers size={18} />
-            </div>
+            <Logo />
             <h1 className="font-bold text-lg tracking-tighter text-white uppercase">Terra<span className="text-emerald-500">Logic</span></h1>
           </div>
 
